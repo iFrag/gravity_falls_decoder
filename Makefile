@@ -12,4 +12,4 @@ all: tests
 tests: tests/tests.out
 
 tests/tests.out:
-	$(CC) ./tests/test.c -o $(BIN_TESTS) $(LIBS) $(CFLAGS) && cd tests && mv ../tests.out .
+	$(CC) ./tests/test.c -o $(BIN_TESTS) $(LIBS) $(CFLAGS) && mv tests.out tests/
